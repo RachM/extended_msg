@@ -22,6 +22,7 @@ To create a ridge within [-1, 1] with:
   - Ridge rotation of 90 degrees to x-axis.
 
 In Matlab:
+
 	>> initialize(2,20,1,-1,1,0.5,0.05,'ridge',struct('gaussianRotation',45,'ridgeRotation',90))
 	>> plotlandscape(1,-1,100)
 
@@ -47,6 +48,7 @@ To find the mean fitness difference over 30 trials between EMNA and UMDA (with w
   - Ridge rotation of 90 degrees to x-axis.
 
 In Matlab:
+
 	>> experiment(@wrapper_emna,@wrapper_umda,10,30,'ridge',struct('gaussianRotation',45,'ridgeRotation',90))
 
 Now to use a (1+1)-ES to find ridge landscapes with a mean fitness difference of 0.3 between EMNA and UMDA. Each parameterisation is tested on 10 landscapes instances, with 30 algorithm comparisons per landscape instance:
